@@ -10,36 +10,33 @@
  drawing cards, while players can decide whether to draw additional cards.
 # Tasks
  2.1 Task 1: Create Card and Deck Classes
- • Create a Card class that represents a single playing card. Each card should have a suit (Hearts,
- Diamonds, Clubs, or Spades) and a rank (Ace, 2, 3, ..., 10, Jack, Queen, King).
- • Useanenumtypetodefinesuits instead of using string values. This ensures consistency and prevents
- errors due to typos.
- • Implement a Deck class that generates a full deck of 52 cards, consisting of four suits and thirteen
- ranks each.
- • Addfunctionality to shuffle the deck randomly.
- • Implement a method to draw a card from the deck, removing it from the available cards.
- • Example Data:– Example of a single card: Card(suit=Hearts, rank=Ace).– Exampleofashuffleddeck: [Card(Spades, King), Card(Diamonds, 7), Card(Hearts,2), ...].
+           • Create a Card class that represents a single playing card. Each card should have a suit (Hearts, Diamonds, Clubs, or Spades) and a rank (Ace, 2, 3, ..., 10, Jack, Queen, King).
+           • Useanenumtypetodefinesuits instead of using string values. This ensures consistency and prevent errors due to typos.
+           • Implement a Deck class that generates a full deck of 52 cards, consisting of four suits and thirteen ranks each.
+           • Addfunctionality to shuffle the deck randomly.
+           • Implement a method to draw a card from the deck, removing it from the available cards.
+           • Example Data:– Example of a single card: Card(suit=Hearts, rank=Ace).– Exampleofashuffleddeck: [Card(Spades, King), Card(Diamonds, 7), Card(Hearts,2), ...].
+           
  2.2 Task 2: Implement a Simple Blackjack Game
- • Blackjack is a game where players aim to get as close to 21 points as possible without exceeding it.
- Face cards (King, Queen, Jack) are worth 10 points, Aces can be worth 1 or 11 points, and other cards
- retain their numeric values.
- • The dealer and the player are both dealt two cards at the start of the game.
- • The player can choose to hit (draw an additional card) or stand (don’t take any more cards.).
- • If the player’s total exceeds 21, they go bust and lose the game.
- • The dealer must follow a set rule: if their total is 16 or below, they must hit; if 17 or above, they must
- stand.
- • The player wins if their total is higher than the dealer’s without exceeding 21.
- • Example Scenario:– Player’s Hand: [Card(Hearts, 10), Card(Clubs, 7)]
- Total: 17– Dealer’s Hand: [Card(Spades, 8), Card(Diamonds, 10)]
- Total: 18– Result: Dealer wins.
+           • Blackjack is a game where players aim to get as close to 21 points as possible without exceeding it. Face cards (King, Queen, Jack) are worth 10 points, Aces can be worth 1 or 11 
+             points, and other cards retain their numeric values.
+           • The dealer and the player are both dealt two cards at the start of the game.
+           • The player can choose to hit (draw an additional card) or stand (don’t take any more cards.).
+           • If the player’s total exceeds 21, they go bust and lose the game.
+           • The dealer must follow a set rule: if their total is 16 or below, they must hit; if 17 or above, they must stand.
+           • The player wins if their total is higher than the dealer’s without exceeding 21.
+           • Example Scenario:– Player’s Hand: [Card(Hearts, 10), Card(Clubs, 7)]
+          Total: 17– Dealer’s Hand: [Card(Spades, 8), Card(Diamonds, 10)]
+          Total: 18– Result: Dealer wins.
+          
  2.3 Task 3: Implement Multiplayer Support
- • Extend the framework to support multiple players in a game.
- • Allow each player to take turns making decisions (e.g., hit or stand in Blackjack).
- • Implement a turn-based system to manage player actions and game progression.
- • Display player hands and game status after each round.
- • Example Data:– Player 1 hand: [Card(Hearts, 7), Card(Spades, 5)].– Player 2 hand: [Card(Diamonds, 9), Card(Clubs, 6)].– Player 1 hits and receives Card(Hearts, 3).– Updatedhand: [Card(Hearts, 7), Card(Spades, 5), Card(Hearts, 3)](To
-tal = 15).
- NB:
+           • Extend the framework to support multiple players in a game.
+           • Allow each player to take turns making decisions (e.g., hit or stand in Blackjack).
+           • Implement a turn-based system to manage player actions and game progression.
+           • Display player hands and game status after each round.
+           • Example Data:– Player 1 hand: [Card(Hearts, 7), Card(Spades, 5)].– Player 2 hand: [Card(Diamonds, 9), Card(Clubs, 6)].– Player 1 hits and receives Card(Hearts, 3).– Updatedhand: 
+            [Card(Hearts, 7), Card(Spades, 5), Card(Hearts, 3)](Total = 15).
+ # NB:
  Basic Rules of the Game:
  • The goal is to get as close to 21 as possible without going over.
  • Face cards (King, Queen, Jack) = 10 points.
