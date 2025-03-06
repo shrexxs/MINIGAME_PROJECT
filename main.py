@@ -1,8 +1,4 @@
 #Card GameSimulation and Analysis
-#SHREYA MISHRA
-#Date: 03/03/2025 
-#REG NO: 2241013173
-#SEC: 22
 
 from enum import Enum
 import random
